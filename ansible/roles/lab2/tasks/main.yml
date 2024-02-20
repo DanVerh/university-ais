@@ -1,0 +1,6 @@
+- name: Overwrite hostname
+  ansible.builtin.copy:
+    content: |
+      daniil-verkhutin-lab2
+    dest: /etc/hostname
+    force: yes

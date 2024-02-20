@@ -1,0 +1,5 @@
+- name: Change hostname
+  hosts: lab2
+  become: yes  
+  roles:
+    - lab2
