@@ -1,6 +1,4 @@
-- name: Overwrite hostname
-  ansible.builtin.copy:
-    content: |
-      daniil-verkhutin-lab2
-    dest: /etc/hostname
-    force: yes
+- name: Set a hostname
+  ansible.builtin.hostname:
+    name: daniil-verkhutin-lab2
+  notify: Restart hostname service

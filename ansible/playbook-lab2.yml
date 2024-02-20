@@ -1,0 +1,8 @@
+- name: Change hostname
+  hosts: lab2
+  become: yes  
+  roles:
+    - lab2
+  
+  handlers:
+    - include: roles/lab2/handlers/handlers.yml

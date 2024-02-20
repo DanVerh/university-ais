@@ -1,0 +1,5 @@
+- name: Restart hostname service
+  service:
+    name: systemd-hostnamed
+    state: restarted
+  listen: "Restart hostname service"
