@@ -1,2 +1,6 @@
 [lab2]
 ip.adress ansible_user=vm_user ansible_ssh_private_key_file=/path/to/key.pem
+
+[lab3]
+ip.adress ansible_user=azureuser ansible_ssh_private_key_file=/path/to/debian_key.pem
+ip.adress ansible_user=azureuser ansible_ssh_private_key_file=/path/to/redhat_key.pem

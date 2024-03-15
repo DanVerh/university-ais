@@ -1,0 +1,5 @@
+- name: Install packages on different OS families
+  hosts: lab3
+  become: yes  
+  roles:
+    - lab3
